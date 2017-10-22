@@ -1,5 +1,5 @@
 {
-  "name": "coonn",
+  "name": "trevor",
   "version": "0.0.1",
   "description": "Electron-based unit converter app.",
   "main": "electron.js",
@@ -15,19 +15,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://ozgrozer@github.com/ozgrozer/coonn.git"
+    "url": "git+https://ozgrozer@github.com/ozgrozer/trevor.git"
   },
   "keywords": [
     "converter"
   ],
-  "author": "Ozgur Ozer <ozgr@live.com> (https://github.com/ozgrozer/coonn)",
+  "author": "Ozgur Ozer <ozgr@live.com> (https://github.com/ozgrozer/trevor)",
   "license": "IHL",
   "bugs": {
-    "url": "https://github.com/ozgrozer/coonn/issues"
+    "url": "https://github.com/ozgrozer/trevor/issues"
   },
-  "homepage": "https://github.com/ozgrozer/coonn#readme",
+  "homepage": "https://github.com/ozgrozer/trevor#readme",
   "dependencies": {
-    "coonn-engine": "latest",
+    "trevor-engine": "latest",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },

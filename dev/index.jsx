@@ -1,16 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import coonnE from 'coonn-engine'
+import trevorE from 'trevor-engine'
 
 class App extends React.Component {
   constructor () {
     super()
-    const input = '60 mi to km'
+    const input = '1 mi to km'
     const output = this.convert(input)
     this.state = { input: input, output: output }
   }
   convert (lines) {
-    return lines.split('\n').map(line => coonnE(line) + '\n')
+    return lines.split('\n').map(line => trevorE(line) + '\n')
   }
   handleInput (event) {
     const input = event.target.value
@@ -20,7 +20,7 @@ class App extends React.Component {
   render () {
     return (
       <div>
-        <div id='drag'>Coonn</div>
+        <div id='drag'>Trevor</div>
         <textarea id='input' onChange={this.handleInput.bind(this)} value={this.state.input} autoFocus />
         <pre id='output'>{this.state.output}</pre>
       </div>

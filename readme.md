@@ -1,15 +1,15 @@
-# coonn
-Electron-based unit converter app inspired by [Numi](http://numi.io/), powered by [React](https://github.com/facebook/react/).
+# trevor
+[Electron](https://github.com/electron/electron) based unit converter app inspired by [Numi](http://numi.io/), powered by [React](https://github.com/facebook/react/).
 
 ![](screenshot.jpg)
 
 ## Build
 ```sh
 # 1. Download the repo.
-git clone https://github.com/ozgrozer/coonn.git
+git clone https://github.com/ozgrozer/trevor.git
 
 # 2. Change directory.
-cd coonn
+cd trevor
 
 # 3. Install dependencies (with npm or yarn).
 npm install
@@ -22,7 +22,7 @@ npm run build
 ```
 
 ## Contribution
-Feel free to contribute. Open a new [issue](https://github.com/ozgrozer/coonn/issues), or make a [pull request](https://github.com/ozgrozer/coonn/pulls).
+Feel free to contribute. Open a new [issue](https://github.com/ozgrozer/trevor/issues), or make a [pull request](https://github.com/ozgrozer/trevor/pulls).
 
 ## License
 [IHL](https://github.com/ozgrozer/ihl)
