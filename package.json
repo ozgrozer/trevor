@@ -1,7 +1,7 @@
 {
   "name": "coonn",
   "version": "0.0.1",
-  "description": "Electron-based converter app.",
+  "description": "Electron-based unit converter app.",
   "main": "electron.js",
   "scripts": {
     "webpack": "node_modules/.bin/webpack",
