@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coonn</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body, #root, #root >div {
+      width: 100%;
+      height: 100%;
+      background-color: #212226;
+    }
+    body {
+      margin: 0;
+    }
+    #drag {
+      height: 40px;
+      color: #5e5e61;
+      cursor: default;
+      user-select: none;
+      text-align: center;
+      font: 12px/40px Menlo;
+      -webkit-app-region: drag;
+    }
+    #input, #output {
+      float: left;
+      padding: 40px;
+      overflow: auto;
+      font: 17px/28px Menlo;
+      height: calc(100% - 40px);
+    }
+    #input {
+      width: 70%;
+      resize: none;
+      border: none;
+      outline: none;
+      color: #e3e7e9;
+      background-color: transparent;
+    }
+    #output {
+      margin: 0;
+      width: 30%;
+      color: #8dd32d;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="bundle.js"></script>
+</body>
+</html>
