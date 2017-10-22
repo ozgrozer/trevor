@@ -1,16 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import trevorE from 'trevor-engine'
+import te from 'trevor-engine'
 
 class App extends React.Component {
   constructor () {
     super()
-    const input = '1 mi to km'
+    const input = '1 km to mi'
     const output = this.convert(input)
     this.state = { input: input, output: output }
   }
   convert (lines) {
-    return lines.split('\n').map(line => trevorE(line) + '\n')
+    return lines.split('\n').map(line => te(line) + '\n')
   }
   handleInput (event) {
     const input = event.target.value

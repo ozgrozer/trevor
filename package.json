@@ -27,9 +27,9 @@
   },
   "homepage": "https://github.com/ozgrozer/trevor#readme",
   "dependencies": {
-    "trevor-engine": "latest",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "trevor-engine": "^0.0.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

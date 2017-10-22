@@ -3596,9 +3596,9 @@ tough-cookie@~2.3.0, tough-cookie@~2.3.3:
   dependencies:
     punycode "^1.4.1"
 
-trevor-engine@latest:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/trevor-engine/-/trevor-engine-0.0.1.tgz#34600f5a9694fdd826ff674c72b2501f7e92ff82"
+trevor-engine@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/trevor-engine/-/trevor-engine-0.0.2.tgz#124dc5521d52a195e3667cc57f1f4992966eef76"
 
 trim-newlines@^1.0.0:
   version "1.0.0"
