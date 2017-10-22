@@ -7,10 +7,11 @@
     "webpack": "node_modules/.bin/webpack",
     "webpack-watch": "node_modules/.bin/webpack -w",
     "electron": "node_modules/.bin/electron .",
-    "build": "npm run webpack && node_modules/.bin/build -m && npm run release:mac",
+    "build": "npm run webpack && node_modules/.bin/build -m && npm run release:mac && npm run burn-dmg",
     "prerelease:mac": "rm -rf releases/$npm_package_version/mac && mkdirp releases/$npm_package_version/mac",
     "release:mac": "cp -R dist/*.dmg releases/$npm_package_version/mac/$npm_package_name-$npm_package_version.dmg",
-    "postrelease": "rm -rf dist"
+    "postrelease": "rm -rf dist",
+    "burn-dmg": "open releases/$npm_package_version/mac/$npm_package_name-$npm_package_version.dmg"
   },
   "repository": {
     "type": "git",

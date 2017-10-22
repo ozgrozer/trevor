@@ -18,7 +18,7 @@ yarn install
 # 4. Build the app.
 npm run build
 
-# 5. DMG file can be found in "coonn/releases/0.0.1/mac/coonn-0.0.1.dmg".
+# 5. DMG file will be opened automatically.
 ```
 
 ## Contribution
