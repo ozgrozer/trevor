@@ -1,6 +1,6 @@
 {
   "name": "trevor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Electron-based unit converter app.",
   "main": "electron.js",
   "scripts": {
@@ -29,15 +29,15 @@
   "dependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "trevor-engine": "^0.0.2"
+    "trevor-engine": "^0.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "electron": "^1.7.9",
-    "electron-builder": "^19.37.2",
+    "electron": "^1.8.1",
+    "electron-builder": "^19.40.0",
     "mkdirp": "^0.5.1",
     "webpack": "^3.8.1"
   }
