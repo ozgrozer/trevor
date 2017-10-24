@@ -25,4 +25,4 @@ npm run build
 Feel free to contribute. Open a new [issue](https://github.com/ozgrozer/trevor/issues), or make a [pull request](https://github.com/ozgrozer/trevor/pulls).
 
 ## License
-[MIT](https://tldrlegal.com/license/mit-license)
+[MIT](https://github.com/ozgrozer/trevor/blob/master/license)
