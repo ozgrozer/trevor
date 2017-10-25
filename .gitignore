@@ -4,3 +4,5 @@ node_modules/
 releases/
 prod/bundle.js
 yarn-error.log
+*.sublime-project
+*.sublime-workspace
