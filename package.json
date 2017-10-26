@@ -20,10 +20,20 @@
     "appId": "com.ozgrozer.trevor",
     "files": [
       "**/*",
+      "!.git",
       "!core",
       "!dist",
       "!node_modules",
-      "!releases"
+      "!releases",
+      "!.gitignore",
+      "!license",
+      "!package-lock.json",
+      "!readme.md",
+      "!screenshot.jpg",
+      "!yarn.lock",
+      "!yarn-error.log",
+      "!*.sublime-project",
+      "!*.sublime-workspace"
     ]
   },
   "repository": {
