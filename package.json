@@ -1,17 +1,30 @@
 {
   "name": "trevor",
   "version": "0.0.3",
-  "description": "Electron-based unit converter app.",
+  "description": "Electron based unit converter app.",
   "main": "electron.js",
   "scripts": {
     "webpack": "node_modules/.bin/webpack",
     "webpack-watch": "node_modules/.bin/webpack -w",
+    "preelectron": "npm run webpack",
     "electron": "node_modules/.bin/electron .",
-    "build": "npm run webpack && node_modules/.bin/build -m && npm run release:mac && npm run burn-dmg",
+    "prebuild": "npm run webpack",
+    "build": "node_modules/.bin/build -m",
+    "postbuild": "npm run release:mac",
     "prerelease:mac": "rm -rf releases/$npm_package_version/mac && mkdirp releases/$npm_package_version/mac",
     "release:mac": "cp -R dist/*.dmg releases/$npm_package_version/mac/$npm_package_name-$npm_package_version.dmg",
-    "postrelease": "rm -rf dist",
+    "postrelease:mac": "rm -rf dist && npm run burn-dmg",
     "burn-dmg": "open releases/$npm_package_version/mac/$npm_package_name-$npm_package_version.dmg"
+  },
+  "build": {
+    "appId": "com.ozgrozer.trevor",
+    "files": [
+      "**/*",
+      "!core",
+      "!dist",
+      "!node_modules",
+      "!releases"
+    ]
   },
   "repository": {
     "type": "git",

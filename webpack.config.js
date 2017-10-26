@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './dev/index.jsx',
+  entry: './core/index.jsx',
   module: {
     loaders: [
       {
@@ -13,6 +13,6 @@ module.exports = {
     ]
   },
   output: {
-    filename: './prod/bundle.js'
+    filename: './production/bundle.js'
   }
 }

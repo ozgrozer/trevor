@@ -3,7 +3,7 @@ let win
 
 function createWindow () {
   win = new BrowserWindow({ width: 900, height: 500, titleBarStyle: 'hidden', show: false })
-  win.loadURL(`file://${__dirname}/prod/index.html`)
+  win.loadURL(`file://${__dirname}/production/index.html`)
   win.on('closed', () => {
     win = null
   })

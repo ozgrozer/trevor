@@ -1,8 +1,10 @@
 .DS_Store
-dist/
-node_modules/
-releases/
-prod/bundle.js
+package-lock.json
 yarn-error.log
 *.sublime-project
 *.sublime-workspace
+
+dist/
+node_modules/
+production/bundle.js
+releases/
