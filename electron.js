@@ -8,6 +8,7 @@ function createWindow () {
     win = null
   })
   win.once('ready-to-show', () => {
+    win.webContents.executeJavaScript('var webFrame = require("electron").webFrame; webFrame.setZoomLevelLimits(1, 1);')
     win.show()
   })
 }
