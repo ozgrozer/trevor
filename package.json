@@ -1,6 +1,6 @@
 {
   "name": "trevor",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Electron based unit converter app.",
   "main": "electron.js",
   "scripts": {
