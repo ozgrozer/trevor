@@ -1,6 +1,6 @@
 {
   "name": "trevor",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Electron based unit converter app.",
   "main": "electron.js",
   "scripts": {
@@ -23,7 +23,6 @@
       "!.git",
       "!core",
       "!dist",
-      "!node_modules",
       "!releases",
       "!.gitignore",
       "!license",
@@ -41,7 +40,11 @@
     "url": "git+https://ozgrozer@github.com/ozgrozer/trevor.git"
   },
   "keywords": [
-    "converter"
+    "converter",
+    "electron",
+    "react",
+    "reactjs",
+    "unit-converter"
   ],
   "author": "Ozgur Ozer <ozgr@live.com> (https://github.com/ozgrozer/trevor)",
   "license": "MIT",
@@ -50,6 +53,7 @@
   },
   "homepage": "https://github.com/ozgrozer/trevor#readme",
   "dependencies": {
+    "electron-store-data": "^0.1.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "trevor-engine": "^0.9.0"
