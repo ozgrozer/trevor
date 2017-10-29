@@ -1,4 +1,7 @@
 # trevor
+[![tag](https://img.shields.io/github/tag/ozgrozer/trevor.svg)](https://github.com/ozgrozer/trevor)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/ozgrozer/trevor/blob/master/license)
+
 [Electron](https://github.com/electron/electron) based unit converter app inspired by [Numi](http://numi.io/), powered by [React](https://github.com/facebook/react/).
 
 ![](screenshot.jpg)
