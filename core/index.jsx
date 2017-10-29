@@ -1,6 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import trevorEngine from 'trevor-engine'
+import { webFrame } from 'electron'
+import Store from 'electron-store-data'
+
+webFrame.setZoomLevelLimits(1, 1)
+
+const storeInput = new Store({
+  filename: 'input',
+  defaults: { input: '1 mi to km' }
+})
 
 console.error = (function (_error) {
   return function (message) {
@@ -13,7 +22,7 @@ console.error = (function (_error) {
 class App extends React.Component {
   constructor (props) {
     super(props)
-    const input = '1 km to mi'
+    const input = storeInput.get('input')
     const output = this.convert(input)
     this.state = { input: input, output: output }
     this.handleInput = this.handleInput.bind(this)
@@ -27,16 +36,19 @@ class App extends React.Component {
     const input = event.target.innerText
     const output = this.convert(input)
     this.setState({ output: output })
+    storeInput.set('input', input)
+  }
+
+  returnFalse (e) {
+    e.preventDefault()
   }
 
   render () {
     return (
       <div>
-        <div id='drag'>Trevor</div>
+        <div id='drag' onSelectStart={this.returnFalse} onMouseDown={this.returnFalse}>Trevor</div>
         <div id='scroll'>
-          <div id='input' contentEditable onInput={this.handleInput}>
-            <div>{this.state.input}</div>
-          </div>
+          <pre id='input' contentEditable onInput={this.handleInput}>{this.state.input}</pre>
           <pre id='output'>{this.state.output}</pre>
         </div>
       </div>

@@ -22,7 +22,6 @@
       height: 40px;
       color: #5e5e61;
       cursor: default;
-      user-select: none;
       text-align: center;
       font: 12px/40px Menlo;
       -webkit-app-region: drag;
@@ -33,6 +32,7 @@
       height: calc(100% - 80px);
     }
     #input, #output {
+      margin: 0;
       float: left;
       height: 100%;
       padding: 0 50px;
@@ -43,11 +43,7 @@
       outline: none;
       color: #e3e7e9;
     }
-    #input span {
-      color: #bdd4d2;
-    }
     #output {
-      margin: 0;
       width: 40%;
       color: #8dd32d;
       text-align: right;

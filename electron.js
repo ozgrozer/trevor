@@ -18,7 +18,6 @@ function createWindow () {
   win.loadURL('file://' + path.join(__dirname, 'production', 'index.html'))
 
   win.once('ready-to-show', () => {
-    win.webContents.executeJavaScript('var webFrame = require("electron").webFrame; webFrame.setZoomLevelLimits(1, 1);')
     win.show()
   })
 

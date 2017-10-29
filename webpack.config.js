@@ -14,5 +14,6 @@ module.exports = {
   },
   output: {
     filename: './production/bundle.js'
-  }
+  },
+  target: 'electron'
 }
