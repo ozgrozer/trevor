@@ -22,11 +22,7 @@ function createWindow () {
     win.show()
   })
 
-  win.on('move', () => {
-    storeWindow.set('bounds', win.getBounds())
-  })
-
-  win.on('resize', () => {
+  win.on('close', () => {
     storeWindow.set('bounds', win.getBounds())
   })
 
