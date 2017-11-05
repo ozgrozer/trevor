@@ -46,7 +46,7 @@ class App extends React.Component {
   render () {
     return (
       <div>
-        <div id='drag' onSelectStart={this.returnFalse} onMouseDown={this.returnFalse}>Trevor</div>
+        <div id='drag' onMouseDown={this.returnFalse}>Trevor</div>
         <div id='scroll'>
           <pre id='input' contentEditable onInput={this.handleInput}>{this.state.input}</pre>
           <pre id='output'>{this.state.output}</pre>
